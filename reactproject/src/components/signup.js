@@ -1,6 +1,9 @@
 import React, { Component } from 'react'
 import {registerUser} from '../apis.js/api'
+import Headers from './header';
+import Footer from "./footer.js";
 import { getToken } from "../apis.js/api";
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -60,6 +63,7 @@ export default class signup extends Component {
 
     render() {
         return (
+
            <React.Fragment>
             <form class="form-signin">
             <img class="mb-4" src="flim.png" alt="" width="72" height="72"/>
@@ -106,7 +110,8 @@ export default class signup extends Component {
               {/* </Link> */}
              </form>
              <br/><br/>
-             <br/><br/>     
+             <br/><br/>  
+             <Footer/>   
              </React.Fragment>
         )
     }

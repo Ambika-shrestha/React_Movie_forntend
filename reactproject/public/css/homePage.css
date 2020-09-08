@@ -1,0 +1,17 @@
+.wrapper{
+    max-height: 120px;
+    border: 1px solid green;
+    display: flex;
+    overflow-x: hidden;
+}
+
+.wrapper::-webkit-scrollbar{
+  width: 0;
+}
+.wrapper .item{
+    width: 220px;
+    height: 220px;
+    line-height:110px ;
+    text-align: center;
+    background-color: pink;
+}
